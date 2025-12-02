@@ -1,80 +1,44 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策 - Opinion ↔ Polymarket 价格助手</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-        }
-        .last-updated {
-            color: #7f8c8d;
-            font-style: italic;
-        }
-    </style>
-</head>
-<body>
-    <h1>隐私政策</h1>
-    <p class="last-updated">最后更新：2024年</p>
+隐私政策
 
-    <h2>概述</h2>
-    <p>Opinion ↔ Polymarket 价格助手（"本扩展"）尊重您的隐私。本隐私政策说明了我们如何处理您的信息。</p>
+最后更新：2025年1月
 
-    <h2>数据收集</h2>
-    <p><strong>本扩展不收集、不存储、不传输任何用户个人信息。</strong></p>
+数据收集
 
-    <h2>数据使用</h2>
-    <ul>
-        <li>本扩展仅在您访问 Opinion 市场页面（app.opinion.trade）时运行</li>
-        <li>扩展仅读取页面标题文本，用于查询 Polymarket 公开 API</li>
-        <li>所有查询的数据均为公开信息，不涉及任何个人隐私</li>
-        <li>扩展不会记录您的浏览历史、搜索记录或任何其他个人信息</li>
-        <li>扩展不会追踪您的行为或向第三方发送任何数据</li>
-    </ul>
+本扩展程序（Opinion价格助手）不会收集、存储或传输任何个人身份信息。
 
-    <h2>数据存储</h2>
-    <ul>
-        <li>扩展仅使用 Chrome 的本地存储 API 存储必要的配置信息</li>
-        <li>所有数据仅存储在您的本地设备上</li>
-        <li>不会将任何数据同步到云端或任何服务器</li>
-    </ul>
+本地存储的数据
 
-    <h2>第三方服务</h2>
-    <p>本扩展会访问以下第三方服务：</p>
-    <ul>
-        <li><strong>Polymarket API</strong>（gamma-api.polymarket.com）：用于查询公开的市场价格数据</li>
-        <li><strong>GitHub</strong>（raw.githubusercontent.com）：用于加载映射配置文件</li>
-    </ul>
-    <p>这些服务均为公开 API，不涉及用户个人信息。</p>
+本扩展程序仅在您的浏览器本地存储以下非个人数据，用于改善用户体验：
 
-    <h2>权限说明</h2>
-    <ul>
-        <li><strong>scripting</strong>：用于在 Opinion 页面注入内容脚本，实现价格查询功能</li>
-        <li><strong>storage</strong>：用于存储配置和缓存数据，提升性能</li>
-        <li><strong>访问 app.opinion.trade</strong>：扩展需要在此域名运行</li>
-        <li><strong>访问 gamma-api.polymarket.com</strong>：查询 Polymarket 公开的价格数据</li>
-        <li><strong>访问 raw.githubusercontent.com</strong>：加载远程映射配置文件</li>
-    </ul>
+- 排序偏好：您选择的排序方式（默认、按价格排序等）
+- 主题偏好：您选择的界面主题（浅色/深色）
 
-    <h2>联系信息</h2>
-    <p>如有任何隐私相关问题，请通过 Chrome Web Store 开发者页面联系我们。</p>
+这些数据仅存储在您的浏览器本地，不会发送到任何服务器，也不会被第三方访问。
 
-    <h2>变更通知</h2>
-    <p>我们可能会不定期更新本隐私政策。重大变更将通过扩展更新通知用户。</p>
-</body>
-</html>
+网络请求
+
+本扩展程序会进行以下网络请求：
+
+1. Polymarket API：用于获取市场数据（仅读取，不发送用户数据）
+2. GitHub Raw URL：用于加载事件映射配置（仅读取，不发送用户数据）
+
+这些请求仅用于获取公开的市场信息，不包含任何个人身份信息。
+
+数据使用
+
+- 本地存储的偏好设置仅用于在您的浏览器中保存您的选择
+- 不会将任何数据用于广告、分析或追踪
+- 不会与第三方共享任何数据
+
+数据删除
+
+您可以随时通过以下方式删除本地存储的数据：
+
+1. 在 Chrome 中卸载本扩展程序
+2. 在浏览器开发者工具中清除 localStorage
+
+联系我们
+
+如有任何关于隐私的疑问，请通过 GitHub Issues 联系我们。
+
+本隐私政策可能会更新，更新后的版本将在此页面发布。
