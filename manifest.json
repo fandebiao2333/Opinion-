@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Opinion价格助手",
+  "description": "在 Opinion 市场页面中自动查找对应 Polymarket 事件并展示最新价格。",
+  "version": "0.1.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "https://app.opinion.trade/*",
+    "https://gamma-api.polymarket.com/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.opinion.trade/*"],
+      "js": ["src/contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Opinion价格助手"
+  }
+}
+
